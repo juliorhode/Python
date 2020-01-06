@@ -1,0 +1,141 @@
+Archivos de python
+-------------------
+
+
+Comentarios
+------------
+Se usa el simbolo #
+
+Salto de Linea
+---------------
+Esto es por si la linea es muy larga y visualmente se necesita hacer en varias lineas para que sea mas legible (no hace salto de linea como tal, es solo visual).
+Se usa el simbolo \
+
+Tipos de datos
+---------------
+Se encuentra en tipos.jpg
+    Numericos
+        int
+        float
+        complejos
+
+    Texto
+
+    Booleanos
+        true
+        false
+
+Operadores
+-----------
+Se encuentra en operadores.jpg
+
+Variables
+----------
+Es un espacio en memoria que puede cambiar durante la ejecucion del programa.
+
+El tipo de variable viene dada por el contenido. Ejemplo: num = 5;
+>>> nombre=5
+>>> type(nombre)
+<class 'int'>
+
+>>> nombre = 'julio'
+>>> type(nombre)
+<class 'str'>
+>>> 
+
+>>> nombre=5.2
+>>> type(nombre)
+<class 'float'>
+
+>>> mensaje="""Esto es un mensaje
+... con tres
+... saltos de 
+... linea"""
+>>> print(mensaje)
+Esto es un mensaje
+con tres
+saltos de 
+linea
+
+No como java que es por el contenedor como se define al deir int. Ejemplo in num = 5;
+
+Condicionales
+--------------
+>>> num1=5
+>>> num2=7
+>>> if num1 > num2:
+...     print("El num1 es mayor")
+... else:
+...     print("El num2 es mayor")
+... 
+El num2 es mayor
+
+
+Funciones
+----------
+Pueden devolver valores.
+Pueden tener parametros/argumentos.
+Se les denomina metodos cuando se encuentran definidas dentro de una clase.
+
+Utilidad:
+    Reutilidad de codigo
+
+Sintaxis:
+def nombre_funcion(parametros):
+    instruccion de la funcion
+    return (opcional)
+
+Ejecucion:
+nombre_funcion(parametros)
+
+
+Listas (Array)
+----------------
+Puede guardar diferentes tipos de valores.
+Se pueden expnadir dinamicamente añadiendo nuevos elementos
+
+Sintaxis:
+nombreLista = [elemento1, elemento2,...]
+
+
+Tuplas
+-------
+Son listas inmutables, es decir, no se pueden modificar despues de su creacion.
+    1) no permite añadir, eliminar, mover elementos (no append, extend, remove).
+    2) Si permite extraer porciones, pero el resultado es una tupla nueva.
+    3) No permite busquedas (no index antes de las versiones 2.6 de python).
+    4) Si permite comprobar si un elemento se encuentra en la tupla.
+
+Ventaja:
+    1) Mas rapidas
+    2) Menos espacio (mayor optimizacion)
+    3) Formatean Strings
+    4) Pueden utilizarse como claves en un diccionario (listas no)
+
+Sintaxis:
+Se puede omitir los () pero no se recomienda
+nombreTupla = (elemento1, elemento2,...)
+
+
+Diccionarios
+-------------
+Estructuras de datos parecidas a las listas  o tuplas. Permite diferentes tipos (enteros, cadenas de texto, decimales, listas, tuplas, otros diccionarios).
+ 
+Estos datos se almacenan asociados a una clave unica, de tal forma que se crea una asociacion de tipo clave:valor por cada elemento.
+
+Estos elementos no estan ordenados. El orden es indiferente a la hora de almacenar la informacion en un diccionario.
+
+
+Asignar un shortcut
+--------------------
+Ir a Preferences > Key Bindings - User
+
+Colocar esto:
+
+[
+{ "keys": ["ctrl+alt+b"], "command": "run_existing_window_command", "args":
+{
+    "id": "repl_python_run",
+    "file": "config/Python/Main.sublime-menu"
+}}
+]
